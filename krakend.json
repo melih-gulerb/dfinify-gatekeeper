@@ -1,0 +1,258 @@
+{
+  "version": 3,
+  "endpoints": [
+    {
+      "endpoint": "api/health",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/health",
+          "host": ["http://host.docker.internal:4000"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/authentication/login",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/authentication/login",
+          "host": ["http://host.docker.internal:4000"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/authentication/register",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/authentication/register",
+          "host": ["http://host.docker.internal:4000"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/authorization",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/authorization",
+          "host": ["http://host.docker.internal:4000"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/organizations",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/organizations",
+          "host": ["http://host.docker.internal:4000"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/roles",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/roles",
+          "host": ["http://host.docker.internal:4000"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/collections",
+      "method": "POST",
+      "backend": [
+        {
+          "url_pattern": "/collections",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/collections/:id",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/collections/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/collections",
+      "method": "PUT",
+      "backend": [
+        {
+          "url_pattern": "/collections/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "PUT"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/collections/:id",
+      "method": "DELETE",
+      "backend": [
+        {
+          "url_pattern": "/collections/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/definitionChanges",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/definitionChanges",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/definitions/:id",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/definitions/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/definitions",
+      "method": "POST",
+      "backend": [
+        {
+          "url_pattern": "/definitions/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/definitions/name",
+      "method": "PUT",
+      "backend": [
+        {
+          "url_pattern": "/definitions/name",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "PUT"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/definitions/value",
+      "method": "PUT",
+      "backend": [
+        {
+          "url_pattern": "/definitions/value",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "PUT"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/definitions/state",
+      "method": "PUT",
+      "backend": [
+        {
+          "url_pattern": "/definitions/state",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "PUT"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/definitions/:id",
+      "method": "DELETE",
+      "backend": [
+        {
+          "url_pattern": "/definitions/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/projects",
+      "method": "POST",
+      "backend": [
+        {
+          "url_pattern": "/projects",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/projects",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/projects",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/projects",
+      "method": "PUT",
+      "backend": [
+        {
+          "url_pattern": "/projects",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "PUT"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/projects/:id",
+      "method": "DELETE",
+      "backend": [
+        {
+          "url_pattern": "/projects/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "DELETE"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/projects/secret/:id",
+      "method": "POST",
+      "backend": [
+        {
+          "url_pattern": "/projects/secret/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "endpoint": "api/projects-feed/:id",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/projects-feed/:id",
+          "host": ["http://host.docker.internal:4001"],
+          "method": "GET"
+        }
+      ]
+    }
+  ]
+}
